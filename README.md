@@ -1,9 +1,9 @@
-# Re
+# 🫨 Re
 
 This is the official PyTorch codes of our paper "Resonance: Learning to Predict Social-Aware Pedestrian Trajectories as Co-Vibrations".
-Due to the size limitations of the attachments, parts of the code and instructions have been redacted.
+The paper will be available on arXiv soon.
 
-## Get Started
+## Getting Started
 
 You can clone [this repository](https://github.com/cocoon2wong/Re) by the following command:
 
@@ -32,7 +32,7 @@ Run the following command to install the required packages in your Python enviro
 pip install -r requirements.txt
 ```
 
-## Dataset Prepare and Process
+## Preparing Datasets
 
 ### ETH-UCY, SDD, NBA, nuScenes
 
@@ -87,7 +87,7 @@ Click the following buttons to learn how we process these dataset files and the 
 Before training `Re` models on your own dataset, you should add your dataset information.
 See [this page](https://cocoon2wong.github.io/Project-Luna/) for more details.
 
-## Pre-Trained Model Weights and Evaluation
+## Model Weights
 
 We have provided our pre-trained model weights to help you quickly evaluate `Re` models' performance.
 
