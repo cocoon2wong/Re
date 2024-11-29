@@ -8,7 +8,7 @@ cover-img: /subassets/img/head_pic.png
  * @Author: Ziqian Zou
  * @Date: 2024-05-31 15:53:21
  * @LastEditors: Conghao Wong
- * @LastEditTime: 2024-11-29 11:28:38
+ * @LastEditTime: 2024-11-29 14:37:05
  * @Description: file content
  * @Github: https://github.com/LivepoolQ
  * Copyright 2024 Ziqian Zou, All Rights Reserved.
@@ -40,7 +40,7 @@ Experiments on multiple datasets, whether pedestrian or vehicle, have verified t
 
 ## Highlights
 
-![SocialCirclePlus](./subassets/img/fig_method.png)
+![Motivation of the Resonance Model](./subassets/img/fig_method.png)
 
 - The *vibration-like* prediction strategy that divides pedestrian trajectory prediction into the direct superposition of multiple vibration portions, i.e., trajectory biases, including the linear base, the self-bias, and the resonance-bias, to better simulate their intuitive behaviors in a decoupled way;
 - The *resonance-like* representation of social interactions in trajectories, which regards that social interactions are associated with trajectory spectrums and their similarities of interaction participators.
