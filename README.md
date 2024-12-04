@@ -1,7 +1,16 @@
+<!--
+ * @Author: Conghao Wong
+ * @Date: 2024-11-22 15:22:32
+ * @LastEditors: Conghao Wong
+ * @LastEditTime: 2024-12-04 15:06:02
+ * @Github: https://cocoon2wong.github.io
+ * Copyright 2024 Conghao Wong, All Rights Reserved.
+-->
+
 # 🫨 Re
 
 This is the official PyTorch codes of our paper "Resonance: Learning to Predict Social-Aware Pedestrian Trajectories as Co-Vibrations".
-The paper will be available on arXiv soon.
+The paper is available on [arXiv](https://arxiv.org/abs/2412.02447) now, and our model weights are available at [here](https://github.com/cocoon2wong/Project-Monandaeg/tree/Re).
 
 ## Getting Started
 
@@ -161,6 +170,14 @@ For example, select the `./weights/rezara1` folder (not to open it!), then click
 You can view some of the visualized model predictions by clicking `Random` and `Run Prediction` as needed.
 
 \* Playground may need dataset videos. For copyright reasons and size limitations, we do not provide them in our repo. Instead, a static image will be displayed if you have no videos put into the corresponding path.
+
+## Contact us
+
+Conghao Wong ([@cocoon2wong](https://github.com/cocoon2wong)): conghaowong@icloud.com  
+Ziqian Zou ([@LivepoolQ](https://github.com/LivepoolQ)): ziqianzoulive@icloud.com  
+Beihao Xia ([@NorthOcean](https://github.com/NorthOcean)): xbh_hust@hust.edu.cn
+
+---
 
 ## Args Used
 
