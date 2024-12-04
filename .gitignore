@@ -13,3 +13,6 @@ Gemfile.lock
 beautiful-jekyll-theme-*.gem
 
 run.sh
+*.backup
+*.downloaded
+.vscode

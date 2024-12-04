@@ -48,6 +48,11 @@ jobs:
           cp -r ./_includes_backup/* ./_includes/
           cp -r ./_layouts_backup/* ./_layouts/
           ls
+      
+      - name: Fetch the new readme
+        run: |
+          pip install requests
+          python ./fetch_readme.py
           
       - name: Build the site in the jekyll/builder container
         uses: actions/jekyll-build-pages@v1
