@@ -10,7 +10,10 @@ gh-badge: [star, fork]
  * @Author: Conghao Wong
  * @Date: 2024-11-29 11:27:18
  * @LastEditors: Conghao Wong
- * @LastEditTime: 2024-12-04 14:43:05
+ * @LastEditTime: 2024-12-04 15:06:29
  * @Github: https://cocoon2wong.github.io
  * Copyright 2024 Conghao Wong, All Rights Reserved.
 -->
+
+This is the official PyTorch codes of our paper "Resonance: Learning to Predict Social-Aware Pedestrian Trajectories as Co-Vibrations".
+The paper is available on [arXiv](https://arxiv.org/abs/2412.02447) now, and our model weights are available at [here](https://github.com/cocoon2wong/Project-Monandaeg/tree/Re).
