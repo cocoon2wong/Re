@@ -2,7 +2,7 @@
  * @Author: Conghao Wong
  * @Date: 2024-11-22 15:22:32
  * @LastEditors: Conghao Wong
- * @LastEditTime: 2024-12-04 15:06:02
+ * @LastEditTime: 2024-12-06 16:26:10
  * @Github: https://cocoon2wong.github.io
  * Copyright 2024 Conghao Wong, All Rights Reserved.
 -->
@@ -155,15 +155,25 @@ You can open a `Tensorboard` to see how losses and metrics change during trainin
 tensorboard --logdir ./logs
 ```
 
-## Playground
+## Visualization & Playground
 
-You can run the following commands to learn how the proposed `Re` works to handle social interactions in an interactive way by adding any manual neighbors.
-In addition to this, most of the visualizations shown in the paper are also drawn through it.
+You can run the following command to visualize model predictions and learn how the proposed `Re` works to handle social interactions in an interactive way by adding any manual neighbors.
+Most of the visualizations shown in the paper are also drawn through this demo program.
 Run the following command to start:
 
 ```bash
 python playground/main.py
 ```
+
+The default video is `zara1`, and you can change to different scenes by addting args `--dataset` and `--clip`.
+Please refer to section *Args Used* to see more related args and usages.
+For example, you can open a playground in the `bookstore0` scene in `SDD` dataset by
+
+```bash
+python playground/main.py --dataset SDD --clip bookstore0
+```
+
+![Playground](figs/playground.png)
 
 Then, click the left `Load Model Weights` to load a pre-trained weights.
 For example, select the `./weights/rezara1` folder (not to open it!), then click `choose` to load it.
