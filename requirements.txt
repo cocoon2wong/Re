@@ -1,5 +1,5 @@
 matplotlib
-numpy
+numpy==1.26
 opencv_python
 torch==2.0.0
 tqdm
