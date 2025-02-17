@@ -2,7 +2,7 @@
  * @Author: Conghao Wong
  * @Date: 2024-11-22 15:22:32
  * @LastEditors: Conghao Wong
- * @LastEditTime: 2024-12-06 16:26:10
+ * @LastEditTime: 2025-02-17 09:34:31
  * @Github: https://cocoon2wong.github.io
  * Copyright 2024 Conghao Wong, All Rights Reserved.
 -->
@@ -157,29 +157,42 @@ tensorboard --logdir ./logs
 
 ## Visualization & Playground
 
-You can run the following command to visualize model predictions and learn how the proposed `Re` works to handle social interactions in an interactive way by adding any manual neighbors.
-Most of the visualizations shown in the paper are also drawn through this demo program.
-Run the following command to start:
+We have build a simple user interface to validate the qualitative trajectory prediction performance of our proposed `Re` models.
+You can use it to visualize model predictions and learn how the proposed `Re` works to handle social interactions in an interactive way by adding any manual neighbors at any positions in the scene.
+
+{: .box-warning}
+**WARNING**: 
+Visualizations may need dataset videos. For copyright reasons and size limitations, we do not provide them in our repo. Instead, a static image will be displayed if you have no videos put into the corresponding path.
+
+### Visualization Requirements
+
+This playground interface is implemented with `PyQt6`.
+Install this package in your python environment to start:
+
+```bash
+pip install pyqt6
+```
+
+### Open a Playground
+
+Run the following command to open a playground:
 
 ```bash
 python playground/main.py
 ```
 
-The default video is `zara1`, and you can change to different scenes by addting args `--dataset` and `--clip`.
-Please refer to section *Args Used* to see more related args and usages.
-For example, you can open a playground in the `bookstore0` scene in `SDD` dataset by
-
-```bash
-python playground/main.py --dataset SDD --clip bookstore0
-```
-
 ![Playground](figs/playground.png)
 
-Then, click the left `Load Model Weights` to load a pre-trained weights.
-For example, select the `./weights/rezara1` folder (not to open it!), then click `choose` to load it.
-You can view some of the visualized model predictions by clicking `Random` and `Run Prediction` as needed.
+### Load Models and Datasets
 
-\* Playground may need dataset videos. For copyright reasons and size limitations, we do not provide them in our repo. Instead, a static image will be displayed if you have no videos put into the corresponding path.
+You can load a supported `Rev` model or one of its variations by clicking the `Load Model` button.
+By clicking the `Run` button, you can see how the loaded model performs on the given sample.
+You can also load different datasets (video clips) by clicking the `More Settings ...` button.
+
+### Add Manual Neighbors
+
+You can also directly click the visualized figure to add a new neighbor to the scene.
+Through this neighbor that wasn't supposed to exist in the prediction scene, you can verify how models handle *social interactions* qualitatively.
 
 ## Contact us
 
