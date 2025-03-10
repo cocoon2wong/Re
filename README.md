@@ -2,7 +2,7 @@
  * @Author: Conghao Wong
  * @Date: 2024-11-22 15:22:32
  * @LastEditors: Conghao Wong
- * @LastEditTime: 2025-02-17 09:34:31
+ * @LastEditTime: 2025-03-10 11:07:58
  * @Github: https://cocoon2wong.github.io
  * Copyright 2024 Conghao Wong, All Rights Reserved.
 -->
@@ -31,9 +31,9 @@ git submodule update --init --recursive
 The codes are developed with Python 3.10.
 Additional packages used are included in the `requirements.txt` file.
 
-{: .box-warning}
-**Warning:** We recommend installing all required Python packages in a virtual environment (like the `conda` environment).
-Otherwise, there *COULD* be other problems due to the package version conflicts.
+> [!WARNING]
+> We recommend installing all required Python packages in a virtual environment (like the `conda` environment).
+> Otherwise, there *COULD* be other problems due to the package version conflicts.
 
 Run the following command to install the required packages in your Python environment:
 
@@ -45,8 +45,8 @@ pip install -r requirements.txt
 
 ### ETH-UCY, SDD, NBA, nuScenes
 
-{: .box-warning}
-**Warning:** If you want to validate `Re` models on these datasets, make sure you are getting this repository via `git clone` and that all `gitsubmodules` have been properly initialized via `git submodule update --init --recursive`.
+> [!WARNING]
+> If you want to validate `Re` models on these datasets, make sure you are getting this repository via `git clone` and that all `gitsubmodules` have been properly initialized via `git submodule update --init --recursive`.
 
 You can run the following commands to prepare dataset files that have been validated in our paper:
 
@@ -82,7 +82,8 @@ You can run the following commands to prepare dataset files that have been valid
     ln -s dataset_original/dataset_configs ./
     ```
 
-    (**NOTE**: You can also download the processed dataset files manually from [here](https://github.com/cocoon2wong/Project-Luna/releases), and put them into `dataset_processed` and `dataset_configs` folders manually.)
+    > [!NOTE]
+    > You can also download the processed dataset files manually from [here](https://github.com/cocoon2wong/Project-Luna/releases), and put them into `dataset_processed` and `dataset_configs` folders manually.
 
 Click the following buttons to learn how we process these dataset files and the detailed dataset settings.
 
@@ -160,9 +161,8 @@ tensorboard --logdir ./logs
 We have build a simple user interface to validate the qualitative trajectory prediction performance of our proposed `Re` models.
 You can use it to visualize model predictions and learn how the proposed `Re` works to handle social interactions in an interactive way by adding any manual neighbors at any positions in the scene.
 
-{: .box-warning}
-**WARNING**: 
-Visualizations may need dataset videos. For copyright reasons and size limitations, we do not provide them in our repo. Instead, a static image will be displayed if you have no videos put into the corresponding path.
+> [!WARNING]
+> Visualizations may need dataset videos. For copyright reasons and size limitations, we do not provide them in our repo. Instead, a static image will be displayed if you have no videos put into the corresponding path.
 
 ### Visualization Requirements
 
