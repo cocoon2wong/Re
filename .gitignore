@@ -16,3 +16,9 @@ run.sh
 *.backup
 *.downloaded
 .vscode
+
+# Link files
+_data
+_includes
+_layouts
+assets
