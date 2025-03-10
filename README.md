@@ -2,7 +2,7 @@
  * @Author: Conghao Wong
  * @Date: 2024-11-22 15:22:32
  * @LastEditors: Conghao Wong
- * @LastEditTime: 2025-03-10 11:07:58
+ * @LastEditTime: 2025-03-10 11:10:42
  * @Github: https://cocoon2wong.github.io
  * Copyright 2024 Conghao Wong, All Rights Reserved.
 -->
@@ -82,8 +82,8 @@ You can run the following commands to prepare dataset files that have been valid
     ln -s dataset_original/dataset_configs ./
     ```
 
-    > [!NOTE]
-    > You can also download the processed dataset files manually from [here](https://github.com/cocoon2wong/Project-Luna/releases), and put them into `dataset_processed` and `dataset_configs` folders manually.
+> [!NOTE]
+> You can also download our processed dataset files manually from [here](https://github.com/cocoon2wong/Project-Luna/releases), and put them into `dataset_processed` and `dataset_configs` folders manually to reproduce our results.
 
 Click the following buttons to learn how we process these dataset files and the detailed dataset settings.
 
