@@ -11,10 +11,15 @@
 
 # Name of website
 title: "Project Unpredictable: Resonance"
-repository: "cocoon2wong/Re"
 description: "🫨 Official codes of \"Resonance':' Learning to Predict Social-Aware Pedestrian Trajectories as Co-Vibrations\""
+
+# Website settings
 url: "https://cocoon2wong.github.io"
 baseurl: "/Re"
+page-branch: "page"
+
+# Paper information
+arxiv-id: "2412.02447"
 
 # Your name to show in the footer
 author: Copyright ©️ Team Unpredictable
@@ -25,8 +30,9 @@ author: Copyright ©️ Team Unpredictable
 
 navbar-links:
   Home: "/index"
+  Paper: "/paper"
+  Codes: "https://github.com/cocoon2wong/Re"
   How To Use: "/guidelines"
-  GitHub Repo: "https://github.com/cocoon2wong/Re"
   Project Unpredictable: "https://cocoon2wong.github.io/index"
 ################
 # --- Logo --- #

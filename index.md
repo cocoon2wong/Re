@@ -8,7 +8,7 @@ cover-img: /subassets/img/head.png
  * @Author: Ziqian Zou
  * @Date: 2024-05-31 15:53:21
  * @LastEditors: Conghao Wong
- * @LastEditTime: 2025-03-12 11:17:37
+ * @LastEditTime: 2025-03-12 16:27:40
  * @Description: file content
  * @Github: https://github.com/LivepoolQ
  * Copyright 2024 Ziqian Zou, All Rights Reserved.
@@ -21,10 +21,10 @@ The paper is available on arXiv now.
 Click the buttons below for more information.
 
 <div style="text-align: center;">
-    <a class="btn btn-colorful btn-lg" href="https://arxiv.org/abs/2412.02447">📖 Paper</a>
-    <!-- <a class="btn btn-colorful btn-lg" href="https://github.com/cocoon2wong/SocialCirclePlus">📖 Supplemental Materials (TBA)</a>
-    <br><br> -->
-    <a class="btn btn-colorful btn-lg" href="https://github.com/cocoon2wong/Re">🛠️ Codes (PyTorch)</a>
+    <!-- {% if site.arxiv-id %} -->
+    <a class="btn btn-colorful btn-lg" href="./paper">📖 Paper</a>
+    <!-- {% endif %} -->
+    <a class="btn btn-colorful btn-lg" href="{{ site.github.repository_url }}">🛠️ Codes</a>
     <a class="btn btn-colorful btn-lg" href="./guidelines">💡 Codes Guidelines</a>
     <br><br>
 </div>

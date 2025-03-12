@@ -16,4 +16,4 @@ gh-badge: [star, fork]
 -->
 
 This is the official PyTorch codes of our paper "Resonance: Learning to Predict Social-Aware Pedestrian Trajectories as Co-Vibrations".
-The paper is available on [arXiv](https://arxiv.org/abs/2412.02447) now, and our model weights are available at [here](https://github.com/cocoon2wong/Project-Monandaeg/tree/Re).
+The paper is available on [arXiv](https://arxiv.org/abs/{{ site.arxiv-id }}) now, and our model weights are available at [here](https://github.com/cocoon2wong/Project-Monandaeg/tree/Re).
