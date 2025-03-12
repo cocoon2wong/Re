@@ -2,13 +2,13 @@
 layout: page
 title: Resonance
 subtitle: "Resonance: Learning to Predict Social-Aware Pedestrian Trajectories as Co-Vibrations"
-cover-img: /subassets/img/head_pic.png
+cover-img: /subassets/img/head.png
 ---
 <!--
  * @Author: Ziqian Zou
  * @Date: 2024-05-31 15:53:21
  * @LastEditors: Conghao Wong
- * @LastEditTime: 2025-03-10 11:05:41
+ * @LastEditTime: 2025-03-12 11:17:37
  * @Description: file content
  * @Github: https://github.com/LivepoolQ
  * Copyright 2024 Ziqian Zou, All Rights Reserved.
