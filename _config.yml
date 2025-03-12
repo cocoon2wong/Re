@@ -17,6 +17,7 @@ description: "🫨 Official codes of \"Resonance':' Learning to Predict Social-A
 url: "https://cocoon2wong.github.io"
 baseurl: "/Re"
 page-branch: "page"
+repository: "cocoon2wong/Re"
 
 # Paper information
 arxiv-id: "2412.02447"
