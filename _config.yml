@@ -13,6 +13,8 @@
 title: "Project Unpredictable: Resonance"
 repository: "cocoon2wong/Re"
 description: "🫨 Official codes of \"Resonance':' Learning to Predict Social-Aware Pedestrian Trajectories as Co-Vibrations\""
+url: "https://cocoon2wong.github.io"
+baseurl: "/Re"
 
 # Your name to show in the footer
 author: Copyright ©️ Team Unpredictable
