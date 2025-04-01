@@ -134,9 +134,9 @@ navbar-var-length: false
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#106ba7b0"
-navbar-float-col: "rgba(70, 70, 70, 0.599)"
-navbar-text-col: "#FFFFFF"
+navbar-col: "#336da830"
+navbar-float-col: "#eaeaea80"
+navbar-text-col: "#000000"
 navbar-border-col: "#DDDDDD"
 page-col: "#FFFFFF"
 text-col: "#404040"
@@ -305,6 +305,7 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - update.sh
 
 plugins:
   - jekyll-paginate
