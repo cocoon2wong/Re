@@ -7,6 +7,7 @@ gh-repo: cocoon2wong/Re
 gh-badge: [star, fork]
 table-of-contents: true
 breadcrumbs: true
+cover-img: /subassets/img/head.png
 ---
 <!--
  * @Author: Conghao Wong
