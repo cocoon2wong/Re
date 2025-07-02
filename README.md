@@ -2,14 +2,14 @@
  * @Author: Conghao Wong
  * @Date: 2024-11-22 15:22:32
  * @LastEditors: Conghao Wong
- * @LastEditTime: 2025-03-10 11:10:42
+ * @LastEditTime: 2025-07-02 10:03:35
  * @Github: https://cocoon2wong.github.io
  * Copyright 2024 Conghao Wong, All Rights Reserved.
 -->
 
 # 🫨 Re
 
-This is the official PyTorch codes of our paper "Resonance: Learning to Predict Social-Aware Pedestrian Trajectories as Co-Vibrations".
+This is the official PyTorch code of our ICCV2025 paper "Resonance: Learning to Predict Social-Aware Pedestrian Trajectories as Co-Vibrations".
 The paper is available on [arXiv](https://arxiv.org/abs/2412.02447) now, and our model weights are available at [here](https://github.com/cocoon2wong/Project-Monandaeg/tree/Re).
 
 ## Getting Started
@@ -61,6 +61,10 @@ You can run the following commands to prepare dataset files that have been valid
         ```bash
         python main_ethucysdd.py
         ```
+        
+        > [!NOTE]
+        > Our reported results and provided weights on the `eth` set is actually the 6-frame-interval version.
+        > For more information and notes our used datasets and splits, please refer to [this page](https://projectunpredictable.com/Project-Qpid/docs/dataset/dataset-and-split-notes/).
 
     - For `NBA`, please download their original dataset files, put them into the given path listed within `dataset_original/main_nba.py`, then run
 
@@ -193,6 +197,18 @@ You can also load different datasets (video clips) by clicking the `More Setting
 
 You can also directly click the visualized figure to add a new neighbor to the scene.
 Through this neighbor that wasn't supposed to exist in the prediction scene, you can verify how models handle *social interactions* qualitatively.
+
+### Visualized Social Modifications
+
+You can use the following command to visualize how a manual neighbor modifies the ego-agent's predicted trajectories, especially in the form of our defined *social modification*:
+
+```bash
+python playground/main.py --compute_social_mod
+```
+
+Load a model (the `Load Model` button), add a manual neighbor (click on the right canvas twice), then click the left `Compute Social Modifications` to start visualize.
+The printed results are similar to our main paper's last figure.
+Try to explore how our model handles social interactions in this way!
 
 ## Contact us
 
@@ -327,6 +343,19 @@ About the `argtype`:
     <ul>
         <li>Type=<code>str</code>, argtype=<code>static</code>;</li>
         <li>The default value is <code>Unavailable</code>.</li>
+    </ul>
+</details>
+
+<details>
+    <summary>
+        <code>--down_sampling_rate</code>
+    </summary>
+    <p>
+        Selects whether to down-sample from multiple-generated predicted trajectories. This arg only works for multiple-generative models.
+    </p>
+    <ul>
+        <li>Type=<code>float</code>, argtype=<code>temporary</code>;</li>
+        <li>The default value is <code>1.0</code>.</li>
     </ul>
 </details>
 
@@ -522,6 +551,19 @@ About the `argtype`:
     <ul>
         <li>Type=<code>int</code>, argtype=<code>temporary</code>;</li>
         <li>The default value is <code>-1</code>.</li>
+    </ul>
+</details>
+
+<details>
+    <summary>
+        <code>--load_part</code>
+    </summary>
+    <p>
+        Choose whether to load only a part of the model weights if the <code>state_dict</code> of the saved model and the model in the code do not match. *IMPORTANT NOTE*: This arg is only used for some ablation experiments. It MAY lead to incorrect predictions or metrics.
+    </p>
+    <ul>
+        <li>Type=<code>int</code>, argtype=<code>temporary</code>;</li>
+        <li>The default value is <code>0</code>.</li>
     </ul>
 </details>
 
@@ -944,6 +986,19 @@ About the `argtype`:
     </ul>
 </details>
 
+<details>
+    <summary>
+        <code>--draw_with_plt</code>
+    </summary>
+    <p>
+        (bool) Choose whether to use PLT as the preferred method for visualizing trajectories (on the empty canvas). It will try to visualize all points on the scene images if this arg is not enabled.
+    </p>
+    <ul>
+        <li>Type=<code>int</code>, argtype=<code>temporary</code>;</li>
+        <li>The default value is <code>0</code>.</li>
+    </ul>
+</details>
+
 ### Re Args
 
 
@@ -1134,10 +1189,10 @@ About the `argtype`:
 
 <details>
     <summary>
-        <code>--compute_social_diff</code>
+        <code>--compute_social_mod</code>
     </summary>
     <p>
-        (Working in process).
+        (bool) Choose whether to enable the computing of social modifications.
     </p>
     <ul>
         <li>Type=<code>int</code>, argtype=<code>temporary</code>;</li>
@@ -1150,7 +1205,7 @@ About the `argtype`:
         <code>--do_not_draw_neighbors</code>
     </summary>
     <p>
-        Choose whether to draw neighboring-agents' trajectories.
+        (bool) Choose whether to draw neighboring-agents' trajectories.
     </p>
     <ul>
         <li>Type=<code>int</code>, argtype=<code>temporary</code>;</li>
@@ -1163,7 +1218,7 @@ About the `argtype`:
         <code>--draw_seg_map</code>
     </summary>
     <p>
-        Choose whether to draw segmentation maps on the canvas.
+        (bool) Choose whether to draw segmentation maps on the canvas.
     </p>
     <ul>
         <li>Type=<code>int</code>, argtype=<code>temporary</code>;</li>
@@ -1176,7 +1231,7 @@ About the `argtype`:
         <code>--lite</code>
     </summary>
     <p>
-        Choose whether to show the lite version of tk window.
+        (bool) Choose whether to show the lite-version's visualization window.
     </p>
     <ul>
         <li>Type=<code>int</code>, argtype=<code>temporary</code>;</li>
@@ -1215,7 +1270,7 @@ About the `argtype`:
         <code>--save_full_outputs</code>
     </summary>
     <p>
-        Choose whether to save all outputs as images.
+        (bool) Choose whether to save all outputs as images.
     </p>
     <ul>
         <li>Type=<code>int</code>, argtype=<code>temporary</code>;</li>
