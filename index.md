@@ -8,7 +8,7 @@ cover-img: /subassets/img/head.png
  * @Author: Ziqian Zou
  * @Date: 2024-05-31 15:53:21
  * @LastEditors: Conghao Wong
- * @LastEditTime: 2025-03-12 16:27:40
+ * @LastEditTime: 2025-11-17 16:53:51
  * @Description: file content
  * @Github: https://github.com/LivepoolQ
  * Copyright 2024 Ziqian Zou, All Rights Reserved.
@@ -21,11 +21,12 @@ The paper is available on arXiv now.
 Click the buttons below for more information.
 
 <div style="text-align: center;">
+    <a class="btn btn-colorful btn-lg" href="https://www.youtube.com/watch?v=hZgIJU-w2cM">▶️ Video Intro</a>
     <!-- {% if site.arxiv-id %} -->
     <a class="btn btn-colorful btn-lg" href="./paper">📖 Paper</a>
     <!-- {% endif %} -->
-    <a class="btn btn-colorful btn-lg" href="{{ site.github.repository_url }}">🛠️ Codes</a>
-    <a class="btn btn-colorful btn-lg" href="./guidelines">💡 Codes Guidelines</a>
+    <a class="btn btn-colorful btn-lg" href="{{ site.github.repository_url }}">🛠️ Code</a>
+    <a class="btn btn-colorful btn-lg" href="./guidelines">💡 Code Guidelines</a>
     <br><br>
 </div>
 
@@ -50,11 +51,12 @@ Experiments on multiple datasets have verified its usefulness both quantitativel
 If you find this work useful, it would be grateful to cite our paper!
 
 ```bib
-@article{wong2024resonance,
-  title={Resonance: Learning to Predict Social-Aware Pedestrian Trajectories as Co-Vibrations},
-  author={Wong, Conghao and Zou, Ziqian and Xia, Beihao and You, Xinge},
-  journal={arXiv preprint arXiv:2412.02447},
-  year={2024}
+@inproceedings{wong2024resonance,
+	title = {Resonance: Learning to Predict Social-Aware Pedestrian Trajectories as Co-Vibrations},
+	author = {Wong, Conghao and Zou, Ziqian and Xia, Beihao},
+	booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision},
+	pages = {25788--25799},
+	year = {2025}
 }
 ```
 
