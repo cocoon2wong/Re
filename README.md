@@ -2,7 +2,7 @@
  * @Author: Conghao Wong
  * @Date: 2024-11-22 15:22:32
  * @LastEditors: Conghao Wong
- * @LastEditTime: 2025-11-17 09:38:55
+ * @LastEditTime: 2025-11-17 09:43:35
  * @Github: https://cocoon2wong.github.io
  * Copyright 2024 Conghao Wong, All Rights Reserved.
 -->
@@ -14,7 +14,8 @@ The paper is available on [arXiv](https://arxiv.org/abs/2412.02447) now, and our
 
 ## Authors' Note
 
-This work is actually the second part in our *Echolocation Trilogy* and focuses on how echoes of the past interact across agents.
+This work is the second part in our *Echolocation Trilogy*.
+It focuses on how echoes of the past interact across agents, by considering their spectral properties.
 The third work in this series, *Reverberation*, is now available on arXiv.
 
 Here are all the repositories involved in our trilogy:
@@ -23,7 +24,7 @@ Here are all the repositories involved in our trilogy:
 - Part II, **How echoes interact with each other?**: [*Resonance*](https://github.com/cocoon2wong/Re) (ICCV 2025);
 - Part III, **How long do the echoes last?**: [*Reverberation*](https://github.com/cocoon2wong/Rev) (Journal, Under Review).
 
-Note that these repositories share the same training engine and the weight files are compatible with each other (in the order in which the repositories were released, the later released repositories are compatible with the weights of the previous releases, the [Rev] repository is recommended as it is compatible with all previous models).
+Note that these repositories share the same training engine and the weight files are compatible with each other (in the order in which the repositories were released, the later released repositories are compatible with the weights of the previous releases, the [*Reverberation*](https://github.com/cocoon2wong/Rev) repository is recommended as it is compatible with all previous models).
 You can copy only the core model folders, e.g. `SocialCircle`, `Re`, `Rev`, etc., to a repository's root path (i.e., the folder where `qpid` is located), and train and test the models via `main.py`.
 
 ## Getting Started
